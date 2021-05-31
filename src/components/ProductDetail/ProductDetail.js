@@ -113,7 +113,7 @@ class ProductDetail extends React.Component{
       <div>
         <div className="panel-heading" style={{borderBottom:"solid 1px grey", textAlign:'center'}}>
           <a href="#default">
-            <Image style={{width: "50px", height: '50px'}} src="https://rickandmortyapi.com/api/character/avatar/19.jpeg" fluid />
+            <Image src="https://www.pngitem.com/pimgs/m/499-4990481_rick-and-morty-logo-png-rick-and-morty.png" style={{width:'200px', height: '50px'}} fluid />
           </a>
         </div>
         <div style = {{ display: "table", width:"100%" }}>
@@ -124,10 +124,10 @@ class ProductDetail extends React.Component{
           </div>
           <div style = {{ display: "table", width: "85%"}}>
             <div style = {{ display: "table", width: "100%"}}>
-              <div   style = {{ float: "left", width: "40%"}}>
+              <div   style = {{ float: "left", width: "40%", marginTop:'20px', marginBottom:'20px'}}>
                 <Image src = {`${this.state.image}`} style = {{ width: "200px", height: "200px"}} fluid/>
               </div>
-              <div style = {{ float: "left", width: "50%"}}>
+              <div style = {{ float: "left", width: "50%", marginTop:'20px', marginBottom: '20px'}}>
                 <p>{ this.state.id}</p>
                 <p>{ this.state.name}</p>
                 <p>{ this.state.status}</p>

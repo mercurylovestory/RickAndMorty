@@ -178,7 +178,7 @@ class Home extends React.Component {
           <div className="col-md-8" style = {{ paddingTop: "0px", marginTop: "30px", borderLeft : "solid 1px grey", height: "100%", display: "table" }}>
             <ProductList products = { results }/>
           </div>
-          <div className="text-right">
+          <div className="text-right" style={{marginRight: '200px'}}>
             <Pagination
               activePage={this.state.activePage}
               itemsCountPerPage={1}
