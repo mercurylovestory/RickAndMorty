@@ -1,14 +1,11 @@
-import ProductList from '../containers/ProductList';
+import ProductList from '../../containers/ProductList';
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 import SearchField from "react-search-field";
-import service from '../services';
-import Pagination from './Pagination';
-import PropTypes from 'prop-types';
-import ScrollUpButton from './ScrollUpButton/ScrollUpButton';
-
-const PER_PAGE = 10;
-const TOTAL_COUNT = 450;
+import service from '../../services';
+import Pagination from "react-js-pagination";
+import ScrollUpButton from '../ScrollUpButton/ScrollUpButton';
+import './Home.css';
 
 class Home extends React.Component {
   constructor(props) {
@@ -143,12 +140,11 @@ class Home extends React.Component {
   }
 
   render() {
-    const self = this;
     console.log( this.state.results);
     const results = this.state.results;
     return (
       <div className="panel panel-default">
-        <div className="panel-heading" style={{borderBottom:'solid 1px grey', textAlign:'center'}}>
+        <div className="ImageContainer">
           <a href="#default">
             <Image src="https://www.pngitem.com/pimgs/m/499-4990481_rick-and-morty-logo-png-rick-and-morty.png" style={{width:'200px', height: '50px'}} fluid />
           </a>
@@ -164,22 +160,22 @@ class Home extends React.Component {
                 />
               </div>
             </div>
-            <select onChange={this.handleStatusChange} style={{width: "90%", height: "30px", marginLeft: "20px", marginBottom: '30px'}} >
+            <select onChange={this.handleStatusChange} className="select-status" >
               <option value="unknown">unknown</option>
               <option value="alive">alive</option>
               <option value="dead">dead</option>
             </select>
             <br />
-            <select onChange={this.handleGenderChange} style={{width: "90%", height: "30px", marginLeft: "20px"}}>
+            <select onChange={this.handleGenderChange} className="select-gender">
               <option value="unknown">unknown</option>
               <option value="male">male</option>
               <option value="female">female</option>
             </select>
           </div>
-          <div className="col-md-8" style = {{ paddingTop: "0px", marginTop: "30px", borderLeft : "solid 1px grey", height: "100%", display: "table" }}>
+          <div className="products">
             <ProductList products = { results }/>
           </div>
-          <div className="text-right" style={{marginRight: '200px'}}>
+          <div className="pagination">
             <Pagination
               activePage={this.state.activePage}
               itemsCountPerPage={1}

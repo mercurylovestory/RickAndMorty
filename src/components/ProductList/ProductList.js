@@ -4,7 +4,6 @@ import Product from '../../containers/Product';
 class ProductList extends React.Component{
   constructor (props) {
     super(props);
-    //this.setState({products: props.products});
     this.state = {products: props.products};
   }
   render() {

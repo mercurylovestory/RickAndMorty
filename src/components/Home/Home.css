@@ -1,0 +1,29 @@
+.ImageContainer{
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.search-container{
+    border-radius: 50%;
+}
+
+.select-status, .select-gender{
+    width: 90%;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.products{
+    padding-top: 0px;
+    margin-top: 30px;
+    border-left : solid 1px grey;
+    height: 100%;
+    display: table;
+}
+
+.pagination{
+    display: inline;
+    float: right;
+    margin-right: 200px;
+}

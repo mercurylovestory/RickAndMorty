@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useHistory
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Product extends Component {
   constructor(props) {
@@ -18,14 +12,7 @@ class Product extends Component {
       name,
       status,
       species,
-      type,
-      gender,
-      origin,
-      location,
-      image,
-      episode,
-      url,
-      created
+      image
     } = this.props.product;
     const self = this;
     return (
