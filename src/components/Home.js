@@ -5,6 +5,7 @@ import SearchField from "react-search-field";
 import service from '../services';
 import Pagination from './Pagination';
 import PropTypes from 'prop-types';
+import ScrollUpButton from './ScrollUpButton/ScrollUpButton';
 
 const PER_PAGE = 10;
 const TOTAL_COUNT = 450;
@@ -187,6 +188,7 @@ class Home extends React.Component {
               onChange={this.handlePageChange.bind(this)}
             />
           </div>
+          <ScrollUpButton/>
         </div>
       </div>
     );
