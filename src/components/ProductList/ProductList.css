@@ -12,6 +12,18 @@
   display: block;
 }
 
+@media screen and (max-width: 900px) {
+  .product-list__item{
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-list__item{
+    width: 90%;
+  }
+}
+
 .body {
   display: inline-flex;
 }
