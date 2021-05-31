@@ -1,0 +1,30 @@
+.product-list {
+  padding: 20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.product-list__item {
+  list-style: none;
+  width: 32%;
+}
+
+.body {
+  display: none-block;
+}
+
+.leftMenu {
+  float: left;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.searchComponent{
+  margin: 20px;
+}
+
+.character, .gender{
+  margin: 20px;
+}
