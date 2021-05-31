@@ -1,11 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Product from '../../containers/Product';
-import Pagination from '../Pagination';
-
-
-const PER_PAGE = 10;
-const TOTAL_COUNT = 450;
 
 class ProductList extends React.Component{
   constructor (props) {
@@ -25,12 +19,6 @@ class ProductList extends React.Component{
               </li>
             ))}
           </ul>
-          <div className="text-right">
-          <Pagination
-            pageRangeDisplayed={10}
-            totalItemsCount={TOTAL_COUNT}
-          />
-          </div>
         </div>
       </div>
     );

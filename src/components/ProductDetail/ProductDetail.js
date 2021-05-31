@@ -111,9 +111,9 @@ class ProductDetail extends React.Component{
         const initialSelectedIndex = 1;
     return (
       <div>
-        <div className="panel-heading">
+        <div className="panel-heading" style={{borderBottom:"solid 1px grey", textAlign:'center'}}>
           <a href="#default">
-            <Image src="holder.js/100px250" fluid />
+            <Image style={{width: "50px", height: '50px'}} src="https://rickandmortyapi.com/api/character/avatar/19.jpeg" fluid />
           </a>
         </div>
         <div style = {{ display: "table", width:"100%" }}>

@@ -20,6 +20,24 @@ class service {
     );
   }
 
+  getFilteredCharacterByName(name){
+    return http.get(
+      '/character/?name=' + name
+    );
+  }
+
+  getFilteredCharacterByGender(gender){
+    return http.get(
+      '/character/?gender=' + gender
+    );
+  }
+
+  getFilteredCharacterByStatus(status){
+    return http.get(
+      '/character/?status=' + status
+    );
+  }
+
   getLocationAll() {
     return http.get('/location');
   }
