@@ -188,8 +188,9 @@ class Home extends React.Component {
               onChange={this.handlePageChange.bind(this)}
             />
           </div>
-          <ScrollUpButton/>
+          
         </div>
+        <ScrollUpButton/>
       </div>
     );
   }
