@@ -116,18 +116,18 @@ class ProductDetail extends React.Component{
             <Image src="https://www.pngitem.com/pimgs/m/499-4990481_rick-and-morty-logo-png-rick-and-morty.png" style={{width:'200px', height: '50px'}} fluid />
           </a>
         </div>
-        <div style = {{ display: "table", width:"100%" }}>
-          <div style = {{ float: "left", width: "10%"}}>
+        <div  style = {{ display: "table", width:"100%" }}>
+          <div style = {{ float: "left", width: "5%", height: '100%', margin: '20px'}}>
             <Link to="/">
               { `< ` } Back
             </Link>
           </div>
-          <div style = {{ display: "table", width: "85%"}}>
-            <div style = {{ display: "table", width: "100%"}}>
-              <div   style = {{ float: "left", width: "40%", marginTop:'20px', marginBottom:'20px'}}>
-                <Image src = {`${this.state.image}`} style = {{ width: "200px", height: "200px"}} fluid/>
+          <div style = {{ width: '90%', display: 'table'}}>
+            <div style = {{ display: "table", width: '100%'}}>
+              <div   style = {{ display: 'inline-flex', width: '250px', height: '250px',margin:'20px', marginRight:'15%'}}>
+                <Image src = {`${this.state.image}`} style={{width: '100%', height: '100%', minWidth: '200px', minHeight:'200px'}}/>
               </div>
-              <div style = {{ float: "left", width: "50%", marginTop:'20px', marginBottom: '20px'}}>
+              <div style = {{ display: 'inline-block', marginBottom: '20px'}}>
                 <p>{ this.state.id}</p>
                 <p>{ this.state.name}</p>
                 <p>{ this.state.status}</p>
@@ -138,8 +138,8 @@ class ProductDetail extends React.Component{
                 <p>{ this.state.created}</p>
               </div>
             </div>
-            <p>Episodes Info</p>
-            <div>
+            <p style={{marginLeft: '20px'}}>Episodes Info</p>
+            <div style={{marginLeft:'20px'}}>
               <TabComponent episods = { this.state.episode}/>
             </div>
           </div>

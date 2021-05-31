@@ -39,7 +39,7 @@ class Product extends Component {
             <Link to= {`/detail/${self.state.id}`} >
               <button
                 className={'btn btn-primary'}
-                style={{ width: '100%' }}
+                style={{ width: '100%'}}
               >
                 Details
               </button>
