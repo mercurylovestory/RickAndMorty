@@ -6,7 +6,6 @@ import service from '../../services';
 import Pagination from "react-js-pagination";
 import ScrollUpButton from '../ScrollUpButton/ScrollUpButton';
 import './Home.css';
-import SideBar from '../SideBar/SideBar';
 
 class Home extends React.Component {
   constructor(props) {
