@@ -12,6 +12,8 @@
   display: block;
 }
 
+
+
 @media screen and (max-width: 900px) {
   .product-list__item{
     width: 45%;
@@ -27,13 +29,6 @@
 .body {
   display: inline-flex;
 }
-
-.leftMenu {
-  float: left;
-  margin-right: 20px;
-  padding: 5px;
-}
-
 .searchComponent{
   margin: 20px;
 }
