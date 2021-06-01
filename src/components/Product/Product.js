@@ -37,18 +37,18 @@ class Product extends Component {
 }
 
 Product.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
-  species: PropTypes.string.isRequired,
+  id: PropTypes.number,
+  name: PropTypes.string,
+  status: PropTypes.string,
+  species: PropTypes.string,
   type: PropTypes.string,
   gender: PropTypes.string,
   origin: PropTypes.object,
   location: PropTypes.object,
   image: PropTypes.string,
-  episode: PropTypes.object.isRequired,
-  url: PropTypes.string.isRequired,
-  created: PropTypes.string.isRequired
+  episode: PropTypes.object,
+  url: PropTypes.string,
+  created: PropTypes.string
 };
 
 export default Product;
