@@ -147,16 +147,13 @@ class Home extends React.Component {
   }
 
   render() {
-
-    let containerClass = 'container';
-    if (this.state.mobileView) containerClass = containerClass + ' mobileview';
     const results = this.state.results;
     const self = this;
     return (
       <div className="panel panel-default">
         <div className="ImageContainer">
           <a href="#default">
-            <Image src="https://www.pngitem.com/pimgs/m/499-4990481_rick-and-morty-logo-png-rick-and-morty.png" style={{width:'200px', height: '50px'}} fluid />
+            <Image src="https://rickandmortyapi.com/api/character/avatar/19.jpeg" style={{width:'50px', height: '50px'}} fluid />
           </a>
           <button className = "menu-button" onClick = {() => { self.onMenuButtonClicked(); }}></button>
         </div>

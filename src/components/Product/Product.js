@@ -9,8 +9,6 @@ class Product extends Component {
   }
   render() {
     const {
-      name,
-      status,
       species,
       image
     } = this.props.product;

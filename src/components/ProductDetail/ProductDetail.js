@@ -48,12 +48,12 @@ class ProductDetail extends React.Component{
 
     return (
       <div>
-        <div className="panel-heading">
+        <div className="top-bar">
           <a href="#default">
-            <Image src="https://www.pngitem.com/pimgs/m/499-4990481_rick-and-morty-logo-png-rick-and-morty.png" style={{width:'200px', height: '50px'}} fluid />
+            <Image src="https://rickandmortyapi.com/api/character/avatar/19.jpeg" style={{width:'50px', height: '50px'}} fluid />
           </a>
         </div>
-        <div  className="container">
+        <div  className="total-container">
           <div className="back-container">
             <Link to="/">
               { `< ` } Back
