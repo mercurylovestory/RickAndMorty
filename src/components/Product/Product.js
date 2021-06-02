@@ -9,6 +9,8 @@ class Product extends Component {
   }
   render() {
     const {
+      name,
+      status,
       species,
       image
     } = this.props.product;
@@ -17,9 +19,9 @@ class Product extends Component {
       <div className="product thumbnail">
         <img src={ image} alt="product" />
         <div className="caption">
-          <p>{this.state.name}</p>
+          <p>{name}</p>
           <p>{species}</p>
-          <p className="product__price">{this.state.status}</p>
+          <p className="product__price">{status}</p>
           <div className="product__button-wrap">
             <Link to= {`/detail/${self.state.id}`} >
               <button

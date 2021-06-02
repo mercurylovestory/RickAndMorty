@@ -11,3 +11,4 @@ export function getProducts(state, props) {
 export function getProduct(state, props) {
   return state.products.find(item => item.id === props.id);
 }
+

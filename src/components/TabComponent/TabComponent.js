@@ -51,7 +51,6 @@ class TabComponent extends React.Component {
   constructor(props) {
     super( props);
     this.state = { episodeUrls: props.episods};
-    console.log( this.state);
   }
 
   componentDidMount() {

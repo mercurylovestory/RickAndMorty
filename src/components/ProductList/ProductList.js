@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from '../../containers/Product';
+import Product from '../Product/Product';
 
 class ProductList extends React.Component{
   constructor (props) {
