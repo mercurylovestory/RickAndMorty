@@ -25,7 +25,8 @@
     "react-router": "^5.2.0",
     "react-router-dom": "5.2.0",
     "react-scroll-up-button": "^1.6.4",
-    "react-search-field": "^1.2.1", "react-syntax-highlighter": "15.4.3",
+    "react-search-field": "^1.2.1",
+    "react-syntax-highlighter": "15.4.3",
     "react-tabs": "^3.2.2",
     "reactjs-dropdown-component": "1.2.0",
     "redux": "4.1.0"
