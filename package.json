@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.14.0",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "bootstrap": "3.4.1",
     "classnames": "2.3.1",
     "faster-react-tabs": "1.0.4",
